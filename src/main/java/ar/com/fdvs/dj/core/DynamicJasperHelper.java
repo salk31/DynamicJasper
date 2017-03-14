@@ -199,9 +199,7 @@ public class DynamicJasperHelper {
             JRDesignParameter jrparam = new JRDesignParameter();
             jrparam.setName(param.getName());
             jrparam.setValueClassName(param.getClassName());
-            if (param.getDefaultValueExpression() != null) {
-                jrparam.setDefaultValueExpression(new JRDesignExpression(param.getDefaultValueExpression()));
-            }
+
             try {
                 jd.addParameter(jrparam);
             } catch (JRException e) {
